@@ -1,0 +1,50 @@
+package br.com.fiapride.main;
+
+import br.com.fiapride.model.Caderno;
+
+public class SistemaPrincipal {
+
+    public static void main(String[] args) {
+
+     
+        Caderno caderno = new Caderno("Grande", "Azul", "Capa dura");
+
+        System.out.println("INFORMAÇÕES DO CADERNO");
+
+        System.out.println("Tamanho: " + caderno.tamanho);
+        System.out.println("Cor: " + caderno.cor);
+        System.out.println("Material: " + caderno.material);
+
+
+        
+        System.out.println("ALTERANDO A COR");
+
+        caderno.alterarCor("Vermelho");
+
+
+    
+        System.out.println(" exemplo: TENTANDO COLOCAR UMA COR VAZIA");
+
+        caderno.alterarCor("");
+
+
+       
+        System.out.println(" ALTERANDO O TAMANHO");
+
+        caderno.alterarTamanho("Pequeno");
+
+
+       
+        System.out.println(" TENTANDO COLOCAR UM TAMANHO VAZIO");
+
+        caderno.alterarTamanho("");
+
+
+        // Estado final
+        System.out.println("ESTADO FINAL DO CADERNO");
+
+        System.out.println("Tamanho: " + caderno.tamanho);
+        System.out.println("Cor: " + caderno.cor);
+        System.out.println("Material: " + caderno.material);
+    }
+}
