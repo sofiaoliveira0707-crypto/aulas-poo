@@ -1,21 +1,16 @@
 # FIAP Ride
 
-## Classe Passageiro
+- Classe Caderno
 
-A classe Passageiro representa uma pessoa que utiliza o sistema de transporte FIAP Ride.
+## UML caderno
+<img width="1620" height="971" alt="UML caderno" src="https://github.com/user-attachments/assets/d6b869ba-45da-4ee4-bfb6-c44e673b96b8" />
 
-O passageiro possui nome, CPF e saldo.
 
-### Métodos
+O projeto com caderno de exemplo, em que ele pode possuir diferentes tamanhos, cores e materiais.
 
-O método `adicionarSaldo()` adiciona dinheiro ao saldo do passageiro. O valor precisa ser maior que zero.
+Criei a classe Caderno para mostrar essas características e permitir que algumas delas sejam alteráveis por meio do uso de métodos.
+A classe Caderno possui três atributos:
 
-O método `pagarViagem()` desconta o valor da viagem do saldo. O valor precisa ser maior que zero e o passageiro precisa ter saldo suficiente.
-
-### Exemplo
-
-```java
-Passageiro passageiro = new Passageiro("Ana Silva", "222");
-
-passageiro.adicionarSaldo(50.0);
-passageiro.pagarViagem(20.0);
+- `tamanho`: tamanho do caderno.
+- `cor`: cor do caderno.
+- `material`: material utilizado na fabricação do caderno.
